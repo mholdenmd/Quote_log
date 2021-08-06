@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const db_name = "quote_db"
+const db_name = 'quote_db'
 
-mongoose.connect('mongodb://localhost/${db_name}', {
+mongoose.connect(`mongodb://localhost/${db_name}`, { //it must be `(ticks not ' or "" it will not work)
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
