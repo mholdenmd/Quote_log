@@ -1,5 +1,5 @@
-const express = require("express");
-const cors = require("cors");
+const express = require("express"); //for store api
+const cors = require("cors"); // allows everything to talk to each other
 const port = 8000;
 const app = express();
 
@@ -15,3 +15,5 @@ require("./server/routes/quotes.routes")(app)
 // });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+// THE ORDER MATTERS!!!
